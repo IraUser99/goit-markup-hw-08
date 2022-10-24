@@ -33,9 +33,20 @@ svg {
 }
 
 .container {
-    width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+
+    @include min-mobile {
+        width: 480px;
+    }
+
+    @include min-tablet {
+        width: 768px;
+    }
+
+    @include min-desktop {
+        width: 1200px;
+    }
 }
 
 .title {
@@ -58,8 +69,13 @@ a {
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include min-desktop {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .logo {
@@ -79,10 +95,15 @@ a {
 
 .section__title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
     text-align: center;
-    margin-bottom: 50px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    font-size: 28px;
+    
+    @include min-desktop {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
 }
 
 .button {

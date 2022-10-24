@@ -1,27 +1,40 @@
 .team {
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
 
-    &>li {
-        background-color: var(--lurge-title-color);
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 0px 0px 4px 4px;
+    @include max-mobile {
+        flex-direction: column;
+    }
+    
+    @include min-tablet {
+        flex-wrap: wrap;  
+    }
+}
+
+.team-card {
+    background-color: var(--lurge-title-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    @include max-mobile {
+        width: 450px;
     }
 }
 
 .team-container {
+    width: 100%;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
 
     text-align: center;
+
+    @include min-desktop {
+        padding-bottom: 30px;
+    }
 }
 
 .section-team {
     background-color: var(--section-color);
-}
-
-.card {
-    background-color: var(--lurge-title-color);
 }
 
 %font {
@@ -59,15 +72,36 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-        background: var(--accent-color);
+    @include max-mobile {
+        &:active,
+        &:focus {
+             background: var(--accent-color);
+        }
+    }
+
+    @include min-tablet {
+        &:hover,
+        &:focus {
+            background: var(--accent-color);
+        }
     }
 }
 
-.section-team a:hover svg,
 .section-team a:focus svg {
     fill: var(--lurge-title-color);
+}
+
+@include max-mobile {
+    .section-team a:active svg {
+        fill: var(--lurge-title-color);
+    }
+}
+
+@include min-tablet {
+    .section-team a:hover svg,
+    .section-team a:focus svg {
+        fill: var(--lurge-title-color);
+    }
 }
 
 .team-list svg {
