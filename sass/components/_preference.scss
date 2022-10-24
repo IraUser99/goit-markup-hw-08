@@ -1,0 +1,31 @@
+.preference__list {
+    display: flex;
+
+    &>li {
+        width: 270px;
+    }
+
+    &>li:not(:first-child) {
+        margin-left: 30px;
+    }
+}
+
+.preference__wrapper {
+    width: 270px;
+    height: 120px;
+    background-color: var(--section-color);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.preference__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}

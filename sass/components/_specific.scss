@@ -1,0 +1,31 @@
+.specifics {
+    padding-top: 0px;
+}
+
+.specific-list {
+    display: flex;
+
+    &>li:not(:first-child) {
+        margin-left: 30px;
+    }
+}
+
+.specific-card {
+    position: relative;
+}
+
+.specific-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+
+    padding-top: 27px;
+    color: var(--lurge-title-color);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: center;
+    text-transform: uppercase;
+}
