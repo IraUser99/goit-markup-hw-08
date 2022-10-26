@@ -26,28 +26,40 @@
     @include max-mobile {
         background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/bg-img-mob@1x.jpg);
         width: 480px;
+
+        @include retina {
+            background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/bg-img-mob@2x.jpg);
+        }
     }
 
 
     @include min-tablet {
         background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/bg-img-tablet@1x.jpg);
         max-width: 768px;
+
+        @include retina {
+            background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/bg-img-tablet@2x.jpg);
+        }
     }
 
-        @include min-desktop {
-            background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/bg-img-desk@1x.jpg);
-            max-width: 1600px;
-            min-height: 600px;
-            padding-top: 200px;
-            padding-bottom: 200px;
-            
-            &-title {
-                width: 696px;
-                height: 120px;
-                font-size: 44px;
-                line-height: 1.36;
-            }
+    @include min-desktop {
+        background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/bg-img-desk@1x.jpg);
+        max-width: 1600px;
+        min-height: 600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+
+        @include retina {
+            background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/bg-img-desk@2x.jpg);
         }
+            
+        &-title {
+            width: 696px;
+            height: 120px;
+            font-size: 44px;
+            line-height: 1.36;
+        }
+    }
         
         
 }
