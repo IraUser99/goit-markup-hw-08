@@ -37,10 +37,6 @@ svg {
     padding: 0 15px;
     width: 320px;
 
-    @media screen and (min-width: 320px) {
-        width: 320px;
-    }
-
     @include min-mobile {
         width: 480px;
     }

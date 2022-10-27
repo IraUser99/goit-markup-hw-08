@@ -1,8 +1,5 @@
 header {
     border-bottom: 1px solid #ECECEC;
-    @media screen and (min-width: 320px) {
-        width: 320px;
-    }
 
     @include max-mobile {
         width: 480px;
