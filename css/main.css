@@ -517,12 +517,6 @@ header {
   height: 80px;
 }
 
-@media screen and (max-width: 767px) {
-  .header-nav {
-    margin-bottom: 306px;
-  }
-}
-
 .hero {
   margin: auto;
   text-align: center;
