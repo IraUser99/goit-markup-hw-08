@@ -47,6 +47,12 @@ svg {
 .container {
   margin: 0 auto;
   padding: 0 15px;
+  width: 320px;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -141,6 +147,11 @@ a {
 header {
   border-bottom: 1px solid #ECECEC;
 }
+@media screen and (min-width: 320px) {
+  header {
+    width: 320px;
+  }
+}
 @media screen and (max-width: 767px) {
   header {
     width: 480px;
@@ -233,6 +244,17 @@ header {
             align-items: center;
   }
 }
+@media screen and (min-width: 768px) {
+  .header-nav {
+    gap: 50px;
+    margin-right: 90px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-nav {
+    margin-right: 290px;
+  }
+}
 
 .header-list {
   display: -webkit-box;
@@ -251,12 +273,6 @@ header {
 @media screen and (min-width: 768px) {
   .header-list {
     gap: 50px;
-    margin-right: 75px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header-list {
-    margin-right: 290px;
   }
 }
 
@@ -298,8 +314,8 @@ header {
 .contact, .header-list__link {
   display: block;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
 }
 @media screen and (max-width: 767px) {
@@ -307,11 +323,29 @@ header {
     gap: 32px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contact, .header-list__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts a {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .contact-tel {
     font-size: 34px;
     line-height: 1.18;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .contact-tel {
+    padding-bottom: 21px;
   }
 }
 
@@ -324,6 +358,7 @@ header {
 @media screen and (min-width: 768px) {
   .contact-mail {
     margin-bottom: 10px;
+    padding-top: 21px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -401,8 +436,10 @@ header {
     transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
   }
   .menu-container.is-open {
+    opacity: 1;
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
@@ -457,6 +494,7 @@ header {
   margin: auto;
   text-align: center;
   min-height: 400px;
+  min-width: 320px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1370,6 +1408,11 @@ header {
   padding-top: 60px;
   padding-bottom: 60px;
   min-width: 480px;
+}
+@media screen and (min-width: 320px) {
+  .footer {
+    width: 320px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
