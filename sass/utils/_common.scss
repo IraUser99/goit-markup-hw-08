@@ -35,7 +35,6 @@ svg {
 .container {
     margin: 0 auto;
     padding: 0 15px;
-    width: 320px;
 
     @include min-mobile {
         width: 480px;

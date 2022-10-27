@@ -47,7 +47,6 @@ svg {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  width: 320px;
 }
 @media screen and (min-width: 480px) {
   .container {
