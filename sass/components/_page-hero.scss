@@ -1,4 +1,8 @@
 .hero {
+    @media (max-width: 467px) {
+            width: 100%;
+        };
+        
     margin: auto;
     text-align: center;
     min-height: 400px;

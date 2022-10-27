@@ -1,3 +1,9 @@
+@mixin adapt {
+    @media (max-width: 467px) {
+        @content;
+    }
+}
+
 @mixin min-mobile {
     @media screen and (min-width: 480px) {
         @content;

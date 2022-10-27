@@ -1,4 +1,7 @@
 header {
+    @media (max-width: 467px) {
+            width: 100%;
+        }
     border-bottom: 1px solid #ECECEC;
 
     @include max-mobile {
@@ -74,10 +77,6 @@ header {
 }
 
 .header-nav {
-    // @include max-mobile {
-    //     margin-bottom: 306px;
-    // }
-
     @include min-tablet {
       display: flex;
       align-items: center; 
@@ -145,6 +144,8 @@ header {
 
 .contacts a {
     @include min-tablet {
+        display: flex;
+        justify-content: center;
     }
 
     @include min-desktop {
@@ -220,7 +221,11 @@ header {
     }
 
     .menu-container {
-        // position: relative;
+        @media (max-width: 467px) {
+                width: 100%;
+                height: 100%;
+            }
+        
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -291,4 +296,10 @@ header {
 
 .contacts-social-wrap {
     height: 80px;
+}
+
+.header-nav {
+    @include max-mobile {
+            margin-bottom: 306px;
+        }
 }

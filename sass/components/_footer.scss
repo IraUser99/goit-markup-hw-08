@@ -1,4 +1,7 @@
 .footer {
+    @media (max-width: 467px) {
+            width: 100%;
+        }
     background-color: var(--hero-footer-color);
     padding-top: 60px;
     padding-bottom: 60px;
