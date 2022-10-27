@@ -32,7 +32,6 @@
         }
     }
 
-
     @include min-tablet {
         background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/bg-img-tablet@1x.jpg);
         max-width: 768px;
@@ -59,9 +58,7 @@
             font-size: 44px;
             line-height: 1.36;
         }
-    }
-        
-        
+    }  
 }
 
 .hero-button {

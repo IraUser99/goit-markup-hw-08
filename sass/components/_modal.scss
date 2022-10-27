@@ -70,10 +70,6 @@
     pointer-events: none;
 }
 
-.no-scroll {
-    overflow: hidden;
-}
-
 .modal {
     @media screen and (max-height: 767px)
     and (orientation: landscape) {
